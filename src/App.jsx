@@ -1,8 +1,16 @@
 import React from 'react'
+import Wazeer from './Componants/Wazeer'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Wazeer/>
+    
+    </>
+
+
+
+
   )
 }
 

@@ -1,0 +1,198 @@
+.SideNav{
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 18% !important;
+  }
+  .mainpart{
+    width: 82% !important;
+    height: 100vh;
+   
+  }
+  .SideImg{
+    width:9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    background-image: url('../src/assets/project-assets/about-BgAkqdr2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .Top-side{
+    padding-top: 50px;
+    margin: 0 auto 20px;
+  }
+  .Top-side #Name-Person{
+    font-size: 1.375rem;
+      font-family: Playfair Display, Georgia, serif !important;
+      font-weight: 700;
+      
+  }
+  .buttin-side li{
+    list-style: none;
+    padding: 5px;
+    letter-spacing: 1px;
+    
+  }
+  .details{
+    padding: 5px !important;
+    
+  }
+  
+  .buttin-side ul{
+    margin: 0 auto 20px;
+    font-size: 16px;
+    
+  
+  
+    
+  }
+  .buttin-side li a{
+    text-decoration: none !important;
+    color: #3b3b3b;
+    
+    font-family: Quicksand, Arial, sans-serif;
+      font-weight: 500;
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      list-style-type: none;
+    
+  }
+  .details  h6{
+  color: #066edd;
+  font-weight: 500 !important;
+  font-family: Quicksand, Arial, sans-serif;
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      list-style-type: none;
+  
+  
+  }
+  .colored{
+    color: black;
+    text-transform: uppercase;
+   
+  
+  }
+  .colored .MMM{
+    
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  
+    gap: 20px;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+    position: relative;
+    color: inherit; /* يحافظ على لون النص الأساسي */
+    padding-bottom: 5px; /* عشان يبقى فيه مسافة تحت اللينك */
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:#066edd;
+    transition: width 0.3s ease-in-out;
+  }
+  #Main-memper{
+    color:#066edd !important ;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+  /*  */
+ /* زرار الفتح - بيظهر فقط على الشاشات الصغيرة */
+.toggle-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: none;
+  }
+  .Elkpeer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100vh;
+    color:#000;
+    background-color: #f5f5f5;
+    padding: 20px;
+    transition: left 0.4s ease-in-out;
+  }
+  
+  
+  
+  .Elkpeer.open {
+    left: 0;
+   
+  }
+  
+  .close-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none; 
+  }
+  @media (max-width: 1024px) and (min-width: 350px) {
+    .toggle-btn {
+      display: block; 
+    }
+    .SideNav{
+        background-color: #fff;
+       
+      }
+    
+    
+    .close-btn {
+      display: block;
+    }
+  
+    .Elkpeer {
+      left: -100%; 
+      background-color: #f5f5f5 !important;
+    }
+  
+    .Elkpeer.open {
+      left: 0; 
+    }
+  }
+  
+  /* لما الشاشة تكون أكبر من 1024px، القائمة تفضل ثابتة بدون تأثير */
+  @media (min-width: 1025px) {
+    .SideNav{
+        background-color: #ffff !important;
+       
+      }
+    .Elkpeer {
+      position: relative;
+      left: 0;
+   
+    width: 100%;
+      height: 100vh;
+      transition: none; /* يلغي أي تأثير */
+    }
+  }
+  
