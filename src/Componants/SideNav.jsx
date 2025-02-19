@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import SideImg from "../assets/project-assets/about-BgAkqdr2.jpg";
 import { Link } from "react-router-dom";
 import "./side.css";
+const sideImgUrl = new URL('../assets/project-assets/about-BgAkqdr2.jpg', import.meta.url).href;
+
 
 const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,7 @@ const SideNav = () => {
 
       <div className={`Elkpeer text-center d-block jc-center ${isOpen ? "open" : ""}`}>
         <div className="Top-side">
-          <div className="SideImg"></div>
+          <div className="SideImg"style={{ backgroundImage: `url(${sideImgUrl})` }}></div>
           <div className="details">
             <h4 id="Name-Person">Jackson Ford</h4>
             <h6>
