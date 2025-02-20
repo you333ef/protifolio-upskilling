@@ -33,11 +33,11 @@ const SideNav = () => {
 
         <div className="buttin-side">
           <ul>
-            <li><a href="/" id="Main-memper">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/skills">Skills</a></li>
-            <li><a href="/experience">Experience</a></li>
-            <li><a href="/work">Work</a></li>
+          <li><Link to="/" id="Main-memper">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Skills">Skills</Link></li>
+            <li><Link to="/Experiance">Experience</Link></li>
+            <li><Link to="/work">Work</Link></li>
           </ul>
         </div>
       </div>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SideNav from './SideNav';
+import { Outlet } from 'react-router-dom';
 
 const Wazeer = () => {
-  
+
+ 
+
 
   return (
     <React.Fragment>
@@ -13,7 +16,7 @@ const Wazeer = () => {
 
 </div>
 <div className="col-md-8 mainpart">
-   
+   <Outlet/>
     
 </div>
         </div>
