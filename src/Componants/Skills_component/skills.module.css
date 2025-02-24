@@ -1,0 +1,107 @@
+.ExperiancePapa {
+    padding: 30px 80px; 
+    background-color: #fff;
+    margin-top: 70px;
+  }
+  .sectionTitle {
+   
+    padding: 10px;
+  }
+  .sectionTitle h4 {
+    font-size: 12px;
+    
+    letter-spacing: 1px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .sectionTitle h2 {
+    font-family: Playfair Display, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 10px 0 0 0;
+  }
+  
+  .sectionText {
+    width: 100%;
+
+    
+    padding-top: 13px;
+  }
+  
+  .sectionText p {
+    color: #666;
+  
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .amazing{
+    color: #3b3a3a;
+    font-weight: 700;
+  }
+  
+
+
+  @media(max-width:1024px){
+    .ExperiancePapa {
+        padding: 15px 20px; 
+        background-color: #fff;
+        margin-top: 70px;
+      }
+  }
+  .skill {
+    margin-bottom: 30px;
+  }
+  
+  .progressBar {
+    height: 9px;
+    background:#f2f3f7;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .progress {
+    height: 5%;
+    border-radius: 5px;
+    text-align: right;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+  }
+  .progress-text {
+  position: absolute;
+  top: -20px;
+  right: 0; 
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff; 
+}
+
+.progress-text {
+  position: absolute;
+  top: -20px; 
+  right: 0; 
+  font-size: 14px;
+ 
+  color: #007bff; 
+}
+.OprionsPapa span{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.9;
+font-family: sans-serif;
+}
+.OprionsPapa{
+  margin-top: 30px;
+}
+
+@media(max-width:1024px){
+  .sectionTitle h4 {
+    padding:0;
+  }
+}

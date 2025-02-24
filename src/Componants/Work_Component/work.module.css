@@ -1,0 +1,149 @@
+.woork{
+    padding: 30px 80px; 
+    background-color: #fff;
+    margin-top:10px;
+    width: 100%;
+ 
+  }
+  .promising_title {
+    padding: 10px;
+  }
+  .promising_title h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+  }
+ 
+  .promising_title h2 {
+    font-family: Playfair Display, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 10px 0 0 0;
+  }
+  .UL{
+    display: flex;
+    flex-direction: row;
+   padding-left: 10px;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 14px;
+   
+  }
+  .UL li{
+    color: #000;
+  }
+  /*  */
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 80px; 
+    padding: 30px 80px; 
+    justify-content: center;
+  }
+  
+  .RWOW {
+    display: flex;
+    flex-wrap: wrap;
+    gap:0px;
+  
+   
+  }
+  
+  .TQSEMA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+   
+  }
+  
+  .image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /*  */
+  .TQSEMA {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .TQSEMA img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  }
+  
+  .TQSEMA::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 123, 255, 0.8); /* لون أزرق شفاف */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 40px;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .TQSEMA:hover::before {
+    opacity: 1;
+  }
+  
+  .TQSEMA:hover img {
+    filter: blur(2px);
+    transform: scale(1.1);
+  }
+  
+  .TQSEMA:hover .heart-icon {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .conc1,.conc2{
+    display: none !important;
+  }
+  .WENGZ{
+    display: block;
+  }
+   @media(max-width:1024px){
+    .woork{
+      padding: 30px 10px; 
+      margin-top:20px;
+      width: 100%;
+   
+    }
+    .images {
+      
+      padding: 30px 10px; 
+      padding: 30px 10px; 
+    
+    }
+    .image {
+      width: 80%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .UL{
+      display: flex;
+      flex-direction: row;
+     padding-left: 10px;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 16px;
+     
+    }
+   }

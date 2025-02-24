@@ -1,0 +1,152 @@
+.EXPERIANCE_WE{
+    padding: 30px 80px; 
+    background-color: #fff;
+    margin-top:10px;
+    width: 100%;
+    height: 100%;
+  }
+  .promising_title {
+    padding: 10px;
+  }
+  .promising_title h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+  }
+ 
+  .promising_title h2 {
+    font-family: Playfair Display, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 10px 0 0 0;
+  }
+  
+
+
+  /*  */
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+   
+  }
+  
+
+  
+  .timelineItem {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 80% !important;
+  }
+  .timelineIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+    position: relative;
+  
+  }
+  
+  .blue {
+    background: #007bff;
+  }
+  
+  .red {
+    background: #dc3545;
+  }
+  
+  .timelineContent {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-left: 15px;
+   
+  }
+  
+  .timelineContent h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: gray;
+  }
+  .yello{
+    background-color: #f0ad4e;
+  }
+  @media(max-width:1024px){
+    .EXPERIANCE_WE{
+        padding: 30px 10px; 
+        background-color: #fff;
+        margin-top:40px;
+        width: 100%;
+        height: 100%;
+      }
+      .promising_title {
+        padding: 10px;
+        
+      }
+      .timelineItem {
+        margin-bottom: 20px;
+        width: 100% !important;
+      }
+  }
+
+
+
+
+
+
+  /* تنسيق الخط الزمني */
+.timeline {
+    position: relative;
+   
+}
+
+
+.timelineItem {
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+
+.timelineIcon {
+  
+   
+    position: relative;
+    z-index: 2;
+}
+.timelineItem::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #dee0e1;
+    top: 60px;
+    bottom: -80px; 
+    left: 25px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.timelineItem:last-child::after {
+    display: none;
+}
+
+
+

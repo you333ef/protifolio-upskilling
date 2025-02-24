@@ -16,8 +16,8 @@ const SideNav = () => {
     
       <button onClick={toggleSidebar} className="toggle-btn">☰</button>
 
-      <div className={`Elkpeer text-center d-block jc-center ${isOpen ? "open" : ""}`}>
-        <div className="Top-side">
+      <div className={`Elkpeer  d-flex flex-column justify-content-center align-items-center text-center ${isOpen ? "open" : ""}`}>
+        <div className="Top-side ">
           <div className="SideImg"style={{ backgroundImage: `url(${sideImgUrl})` }}></div>
           <div className="details">
             <h4 id="Name-Person">Jackson Ford</h4>
@@ -31,8 +31,8 @@ const SideNav = () => {
        
         <button onClick={toggleSidebar} className="close-btn">✖</button>
 
-        <div className="buttin-side">
-          <ul>
+        <div className="buttin-side ">
+          <ul className="d-flex flex-column justify-content-center align-items-center text-center mllm">
           <li><Link to="/" id="Main-memper">Home</Link></li>
             <li><Link to="/About">About</Link></li>
             <li><Link to="/Skills">Skills</Link></li>

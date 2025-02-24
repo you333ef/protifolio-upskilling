@@ -1,0 +1,180 @@
+h1{
+    color: blue;
+    background-color: black;
+}
+/* لتكبير حجم القسم وتنسيقه */
+.aboutSection {
+    padding: 30px 80px; /* تحكم في المسافة العلوية والسفلية */
+    background-color: #fff;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .sectionTitle {
+   
+    padding: 10px;
+  }
+  .sectionTitle h4 {
+    font-size: 12px;
+    
+    letter-spacing: 1px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .sectionTitle h2 {
+    font-family: Playfair Display, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 10px 0 0 0;
+  }
+  
+ 
+  .sectionText {
+    max-width: 100%;
+
+    
+    padding-top: 13px;
+  }
+  
+  .sectionText p {
+    color: #666;
+  
+    line-height: 1.7;
+    
+    font-size: 13px;
+  }
+  .amazing{
+    color: #3b3a3a;
+    font-weight: 700;
+  }
+  
+  /* تنسيق الكارد (البطاقة) */
+  .cardBox {
+    background-color: #f7f7f7;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 30px 15px; 
+    transition: all 0.3s ease;
+  }
+  
+  .cardBox:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* أيقونة داخل الكارد */
+  .icon {
+    font-size: 40px;
+    color: #f76b1c;
+    margin-bottom: 15px;
+  }
+  
+
+  .row, .col-md-3 {
+    margin: 0 !important;
+    padding: 0 !important;
+ 
+   
+    
+  }
+  
+  .Hoksha{
+ display: flex !important;
+ justify-content: start;
+
+ align-items: center;
+
+  }
+  .oopopop1,.oopopop2,.oopopop3,.oopopop4{
+    flex-direction: column;
+    justify-content:start;
+  
+   
+  }
+ .Hoksha h3{
+   font-size: 16px;
+   font-weight: 700;
+  }
+ 
+.oopopop1::after {
+  content: "";
+  display: block;
+  width: 99%; /* خلي العرض أقل من 100% */
+  height: 3px;
+  background:#066edd;
+  margin: auto; /* يخلي الخط متوسّط */
+  border-radius: 2px;
+}
+
+  .oopopop1 .icon{
+   
+   color: rgb(44, 152, 240)
+
+  }
+  .oopopop2::after {
+    content: "";
+    display: block;
+    width: 99%; /* خلي العرض أقل من 100% */
+    height: 3px;
+   background-color:  rgb(236, 84, 83);
+    margin: auto; /* يخلي الخط متوسّط */
+    border-radius: 2px;
+  }
+  
+    .oopopop2 .icon{
+      color: rgb(236, 84, 83);
+  
+    }
+    .oopopop3::after {
+      content: "";
+      display: block;
+      width: 99%; /* خلي العرض أقل من 100% */
+      height: 3px;
+      background:rgb(249, 191, 63);;
+      margin: auto; /* يخلي الخط متوسّط */
+      border-radius: 2px;
+    }
+    
+      .oopopop3 .icon{
+        color: rgb(249, 191, 63);;
+    
+      }
+      .oopopop4::after {
+        content: "";
+        display: block;
+        width: 99%; /* خلي العرض أقل من 100% */
+        height: 3px;
+        background: rgb(168, 76, 184);;
+        margin: auto; /* يخلي الخط متوسّط */
+        border-radius: 2px;
+      }
+      
+        .oopopop4 .icon{
+          color:  rgb(168, 76, 184);;
+      
+        }
+  
+  @media(max-width:1024px){
+    .aboutSection {
+      padding: 20px 20px; /* تحكم في المسافة العلوية والسفلية */
+      background-color: #fff;
+      margin-top: 70px;
+    }
+    
+       .oopopop1,.oopopop2,.oopopop3,.oopopop4{
+        padding: 10px;
+       }
+
+  }
+
+
+
+
+
+
+
+
+  

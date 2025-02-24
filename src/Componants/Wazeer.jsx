@@ -10,7 +10,7 @@ const Wazeer = () => {
   return (
     <React.Fragment>
         <div className="WEZO">
-        <div className="row">
+        <div className="row off g-0">
         <div className="col-md-3 SideNav">
             <SideNav/>
 

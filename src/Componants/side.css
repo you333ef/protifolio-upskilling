@@ -2,7 +2,9 @@
     background-color: #f5f5f5;
     height: 100vh;
     width: 18% !important;
+    z-index: 1000;
   }
+ 
   .mainpart{
     width: 82% !important;
     height: 100vh;
@@ -34,6 +36,8 @@
     letter-spacing: 1px;
     
   }
+  
+  
   .details{
     padding: 5px !important;
     
@@ -42,6 +46,7 @@
   .buttin-side ul{
     margin: 0 auto 20px;
     font-size: 16px;
+   
     
   
   
@@ -53,7 +58,7 @@
     
     font-family: Quicksand, Arial, sans-serif;
       font-weight: 500;
-      font-size: .75rem;
+      font-size: .78rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       list-style-type: none;
@@ -83,7 +88,6 @@
     list-style: none;
     padding: 0;
   
-    gap: 20px;
   }
   
   li {
@@ -95,6 +99,7 @@
     position: relative;
     color: inherit; /* يحافظ على لون النص الأساسي */
     padding-bottom: 5px; /* عشان يبقى فيه مسافة تحت اللينك */
+   
   }
   
   a::after {
@@ -116,7 +121,7 @@
   /*  */
  /* زرار الفتح - بيظهر فقط على الشاشات الصغيرة */
 .toggle-btn {
-    font-size: 24px;
+    font-size: 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -126,11 +131,22 @@
     z-index: 1000;
     display: none;
   }
+  .close-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none; 
+  }
   .Elkpeer {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 60%;
+    width: 50%;
     height: 100vh;
     color:#000;
     background-color: #f5f5f5;
@@ -145,20 +161,15 @@
    
   }
   
-  .close-btn {
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: rgb(11, 11, 11);
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: none; 
-  }
+ 
   @media (max-width: 1024px) and (min-width: 350px) {
     .toggle-btn {
       display: block; 
+    }
+    .SideNav{
+   
+      width: 0!important;
+      z-index: 1000;
     }
     .SideNav{
         background-color: #fff;
@@ -178,21 +189,29 @@
     .Elkpeer.open {
       left: 0; 
     }
+    .buttin-side li a{
+      font-weight: 600;
+      font-size: .80rem;
+    }
+
+   
   }
   
-  /* لما الشاشة تكون أكبر من 1024px، القائمة تفضل ثابتة بدون تأثير */
+  
   @media (min-width: 1025px) {
     .SideNav{
         background-color: #ffff !important;
        
+       
       }
     .Elkpeer {
-      position: relative;
+    
       left: 0;
-   
-    width: 100%;
+  
+    width: 18%;
       height: 100vh;
-      transition: none; /* يلغي أي تأثير */
+      transition: none; 
     }
+  
   }
   
